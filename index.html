@@ -17,18 +17,31 @@
 
 <body>
     <div class="group">
-        <h1 id="top">Sandwich</h1>
+        <h1 id="top">CranBear</h1>
         <h1>Password Strength Tester</h1>
 
-        <label for="">Password</label>
-        <input type="text"
-               id="password"
-               placeholder="Type your password here"/>
-        <label for="">Strength of password</label>
+        <label for="">Password Input</label>
+        <div class="input-wrapper">
+            <input id="password" type="text" placeholder="Enter password here"> <!--Change the "type="password"" to enable Edge's deafualt password visibility button-->
+            <!--<button id="copy-button">[_]+</button>-->
+            <button id="copy-button" aria-label="Copy">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4
+                            a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </button>
+
+        </div>
+        <br><br>
+        <label for="">Strength of Your Password</label>
         <div class="power-container">
             <div id="power-point"></div>
         </div>
     </div>
+
+    
 </body>
 
 
