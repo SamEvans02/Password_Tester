@@ -15,6 +15,8 @@ Also, everyone uses passwords, so even though there isn't a line around the corn
         - Basic requirements for strong passwords 
     - Password reccomendations (Future: based on current user's input because I don't know anyone who uses ones recommended by browsers) 
     - Entropy calculator for the curious 
+    - I could add a "Generate random" button next to the "Copy" button which generates a strong password 
+        - If a user already has input in text box, randomization will use some of that. If left blank it will be purely random. 
     - I'll try to come up with more while still keeping it simple 
 
 
