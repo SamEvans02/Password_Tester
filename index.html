@@ -7,15 +7,52 @@
           name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Main Password Page</title>
-    <link rel="stylesheet"
-          href="stylesheet.css">
-    <script src="script.js" defer></script>
+    <link rel="icon" href="Images/Favicons/Telecommunication_5.png" type="image/jpeg"> <!--Favicon Link-->
+    <link rel="stylesheet" href="stylesheet.css"> <!--CSS Link-->
+    <script src="script.js" defer></script> <!--JS Link-->
 </head>
 
 
 
 
 <body>
+    <!--Navbar-->
+    <div class="Navbar">
+        <!--Main Links (Text for now)-->
+        <div class="Main_Links_Padding">
+            <!--Main Link (My name for this Website's Purpose (As it is for myself))-->
+            <a class="Main_Link" href="/">=/ Sam Evans /=</a>
+            <div class="Main_Links_Padding_After_Main_Link">
+                <!--Other Main Links-->
+                <div class="Main_Links">
+                    <a class="Active_Link" href="index.html">Homepage</a>
+                </div>
+                <a class="Main_Links" href="projects.html" target="_blank">Projects</a>
+                <a class="Main_Links" href="articles.html" target="_blank">Articles</a>
+                <a class="Main_Links" href="about.html" target="_blank">About</a>
+                <a class="Main_Links" href="contact_information.html" target="_blank">Contact</a>
+                
+            </div>
+        
+
+            <!--Link Buttons for my Related Accounts-->
+            <div class="Navbar_Icons_Right_Padding">
+                <a class="Navbar_Icons" href="https://www.linkedin.com/in/samuelevans02/" target="_blank">
+                    <img style="margin-top: -8px" height="35px" width="35px" alt="Link to my LinkedIn Profile" src="Images/Logos/LinkedIn_Logos/SVGs/icons8-linkedin-48.svg"/>
+                </a>
+                <a class="Navbar_Icons" href="https://github.com/samevans02/" target="_blank"> 
+                    <img style="margin-top: -6px; margin-right: 15px" height="32px" width="32" alt="Link to my GitHub Profile" src="Images/Logos/GitHub_Logos/icons8-github-420.svg"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <!-- Body Content -->
     <div class="group">
         <h1 id="top">CranBear</h1>
         <h1>Password Strength Tester</h1>
@@ -34,7 +71,7 @@
             </button>
 
         </div>
-        <br><br>
+        <br>
         <label for="">Strength of Your Password</label>
         <div class="power-container">
             <div id="power-point"></div>
