@@ -6,17 +6,17 @@
     <meta charset="UTF-8"
           name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Main Password Page</title>
-    <link rel="icon" href="Images/Favicons/Telecommunication_5.png" type="image/jpeg"> <!--Favicon Link-->
-    <link rel="stylesheet" href="stylesheet.css"> <!--CSS Link-->
-    <script src="script.js" defer></script> <!--JS Link-->
+    <title>Password Strength Page</title>
+    <link rel="icon" href="Images/Favicons/Key.png" type="image/jpeg">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
 </head>
 
 
 
 
 <body>
-    <!--Navbar-->
+    <!--======================= Navbar =======================-->
     <div class="Navbar">
         <!--Main Links (Text for now)-->
         <div class="Main_Links_Padding">
@@ -25,12 +25,9 @@
             <div class="Main_Links_Padding_After_Main_Link">
                 <!--Other Main Links-->
                 <div class="Main_Links">
-                    <a class="Active_Link" href="index.html">Homepage</a>
+                    <a class="Active_Link" href="index.html">Password Checker</a>
                 </div>
-                <a class="Main_Links" href="projects.html" target="_blank">Projects</a>
-                <a class="Main_Links" href="articles.html" target="_blank">Articles</a>
                 <a class="Main_Links" href="about.html" target="_blank">About</a>
-                <a class="Main_Links" href="contact_information.html" target="_blank">Contact</a>
                 
             </div>
         
@@ -52,14 +49,28 @@
 
 
 
-    <!-- Body Content -->
+    <!--======================= Body Content- Password Tester =======================-->
     <div class="group">
         <h1 id="top">CranBear</h1>
         <h1>Password Strength Tester</h1>
 
-        <label for="">Password Input</label>
         <div class="input-wrapper">
             <input id="password" type="text" placeholder="Enter password here"> <!--Change the "type="password"" to enable Edge's deafualt password visibility button-->
+
+
+            <!-- Generate button -->
+            <button id="generate-button" aria-label="Generate password">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- refresh / rotate icon -->
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"></path>
+                    <path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+            </button>
+
+
             <!--<button id="copy-button">[_]+</button>-->
             <button id="copy-button" aria-label="Copy">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -69,10 +80,9 @@
                             a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                 </svg>
             </button>
-
         </div>
         <br>
-        <label for="">Strength of Your Password</label>
+        <label for="">Password Strength</label>
         <div class="power-container">
             <div id="power-point"></div>
         </div>

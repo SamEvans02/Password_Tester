@@ -23,31 +23,62 @@ password.oninput = function() {
 
 
 const input = document.getElementById("password");
+const generateButton = document.getElementById("generate-button");
 const copyButton = document.getElementById("copy-button");
 
-copyButton.addEventListener("click", () => {
-    navigator.clipboard.writeText(input.value)
-        .then(() => {
-            //copyButton.textContent = "[_]^";
-            copyButton.innerHTML = `
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-            `;
-            setTimeout(() => {
-                copyButton.innerHTML = `
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4
-                                a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                `;
-            }, 1200);
+const generateIcon = `
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="23 4 23 10 17 10"></polyline>
+    <polyline points="1 20 1 14 7 14"></polyline>
+    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"></path>
+    <path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+</svg>`;
 
-        });
+const copyIcon = `
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+    <path d="M5 15H4a2 2 0 0 1-2-2V4
+             a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+</svg>`;
+
+const checkIcon = `
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"></polyline>
+</svg>`;
+
+
+
+
+
+function generatePassword(length = 16) {
+    const chars =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
+        "abcdefghijklmnopqrstuvwxyz" +
+        "0123456789" +
+        "!@#$%^&*()_+-=[]{}|;:,.<>?";
+    let password = "";
+    for (let i = 0; i < length; i++) {
+        password += chars[Math.floor(Math.random() * chars.length)];
+    }
+    return password;
+}
+
+generateButton.addEventListener("click", () => {
+    input.value = generatePassword();
+    generateButton.innerHTML = checkIcon;
+    setTimeout(() => (generateButton.innerHTML = generateIcon), 800);
 });
+
+copyButton.addEventListener("click", () => {
+    navigator.clipboard.writeText(input.value).then(() => {
+        copyButton.innerHTML = checkIcon;
+        setTimeout(() => (copyButton.innerHTML = copyIcon), 800);
+    });
+});
+
 
 
 
