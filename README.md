@@ -1,6 +1,6 @@
 # Password_Tester
 A repository for making a simple password tester. <br>
-This will be copied into my "Website" repository when I get around to addign more substance to it. <br><br><br><br><br><br>
+This will be copied into my "Website" repository when I get around to adding more substance to it. <br><br><br><br><br><br>
 
 
 
