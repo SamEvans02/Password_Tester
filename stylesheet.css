@@ -204,6 +204,20 @@ a.Active_Link:hover {
 
 
 
+/*------------------------------------ Layout------------------------------------*/
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 250px; /* left grows, right fixed */
+    column-gap: 3%;                  /* space between password + entropy */
+    padding-right: 5%;               /* space from right edge */
+    margin-top: 40px;
+}
+
+
+
+
+
+
 
 
 
@@ -214,10 +228,10 @@ a.Active_Link:hover {
     max-width: 650px;
     text-align: center;
 
-    margin-top: 2%;
+    margin-top: -5%;
     margin-bottom: auto;
     margin-left: 2%;
-    margin-right: 45%;
+    margin-right: 15%;
 }
 
 .group label {
@@ -321,3 +335,41 @@ a.Active_Link:hover {
 
 
 
+
+
+
+
+
+
+/*------------------------------------ Entropy ------------------------------------*/
+/* Right-side entropy panel */
+.entropy {
+    margin-right: auto;
+    margin-left: -20%;
+    /*margin-left: -250px;*/
+    margin-bottom: auto;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    padding: 20px 25px;
+    padding-right: 5px;
+    border-radius: 12px;
+    width: 300px;
+    /*width: 250px;*/
+    /*width: 100%;*/
+    color: #0e0f0f;
+    font-family: monospace;
+    text-align: left;
+}
+
+.entropy h2 {
+    margin-top: 0;
+    /*color: #a5143b;*/
+    color: black;
+}
+
+#entropy-value {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #e50067;
+}

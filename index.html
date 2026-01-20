@@ -6,7 +6,7 @@
     <meta charset="UTF-8"
           name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Password Strength Page</title>
+    <title>CranBear Simple Passwords</title>
     <link rel="icon" href="Images/Favicons/Key.png" type="image/jpeg">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js" defer></script>
@@ -50,46 +50,68 @@
 
 
     <!--======================= Body Content- Password Tester =======================-->
-    <div class="group">
-        <h1 id="top">CranBear</h1>
-        <h1>Password Strength Tester</h1>
+    <div class="layout">
+        <div class="group">
+            <h1 id="top">CranBear's</h1>
+            <h1>Password Tester</h1>
 
-        <div class="input-wrapper">
-            <input id="password" type="text" placeholder="Enter password here"> <!--Change the "type="password"" to enable Edge's deafualt password visibility button-->
-
-
-            <!-- Generate button -->
-            <button id="generate-button" aria-label="Generate password">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <!-- refresh / rotate icon -->
-                    <polyline points="23 4 23 10 17 10"></polyline>
-                    <polyline points="1 20 1 14 7 14"></polyline>
-                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"></path>
-                    <path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
-                </svg>
-            </button>
+            <div class="input-wrapper">
+                <input id="password" type="text" placeholder="Enter a password"> <!--Change the "type="password"" to enable Edge's deafualt password visibility button-->
 
 
-            <!--<button id="copy-button">[_]+</button>-->
-            <button id="copy-button" aria-label="Copy">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4
-                            a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                </svg>
-            </button>
+                <!-- Generate button -->
+                <button id="generate-button" aria-label="Generate password">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Refresh icon -->
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"></path>
+                        <path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                    </svg>
+                </button>
+
+
+                <!-- Copy button -->
+                <!--<button id="copy-button">[_]+</button>--> <!-- Text-based icon -->
+                <button id="copy-button" aria-label="Copy">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Copy icon -->
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4
+                                a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </button>
+            </div>
+            <br>
+            <label for=""> Strength</label>
+            <div class="power-container">
+                <div id="power-point"></div>
+            </div>
         </div>
-        <br>
-        <label for="">Password Strength</label>
-        <div class="power-container">
-            <div id="power-point"></div>
+
+
+
+
+        <div class="entropy">
+            <h2>Entropy</h2>
+            <p id="entropy-value">- bits</p>
+            <p class="entropy-description">
+                Entropy measures how unpredictable your password is, higher is better <br><br>
+                Formula: <br>
+                E = log<sub>2</sub>(R<sup>L</sup>) <br>
+                E: Password entropy (bits) <br>
+                R: Number of possible characters <br>
+                L: Password length <br>
+            </p>
         </div>
     </div>
 
     
 </body>
+
+
 
 
 </html>

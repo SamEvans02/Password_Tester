@@ -1,23 +1,26 @@
 let password = document.getElementById("password");
 let power = document.getElementById("power-point");
 password.oninput = function() {
-    let point = 0;
+    let point = -1;
     let value = password.value;
-    let widthPower = ["1%", "20%", "40%", "60%", "80%", "100%"];
-    let colorPower = ["#D73F40", "#DC6551", "#F2B84F", "#f2e74fff", "#BDE952", "#0f9400ff"]
+    let widthPower = ["1%", "25%", "50%", "75%", "100%"];
+    let colorPower = ["#D73F40", "#DC6551", "#F2B84F", "#f2e74fff", "#0f9400ff"]
 
-    if (value.length >= 8) {
-        point += 1;
-    }
     let arrayTest = [/[0-9]/, /[a-z]/, /[A-Z]/, /[^0-9a-zA-Z]/];
     arrayTest.forEach((item) => {
         if (item.test(value)) {
             point += 1;
         }
     });
+    if (value.length >= 8) {
+        point += 1;
+    }
+
     power.style.width = widthPower[point];
     power.style.backgroundColor = colorPower[point];
 };
+
+
 
 
 
@@ -78,6 +81,33 @@ copyButton.addEventListener("click", () => {
         setTimeout(() => (copyButton.innerHTML = copyIcon), 800);
     });
 });
+
+
+
+
+
+
+function calculateEntropy(password) {
+    let charset = 0;
+
+    if (/[a-z]/.test(password)) charset += 26;
+    if (/[A-Z]/.test(password)) charset += 26;
+    if (/[0-9]/.test(password)) charset += 10;
+    if (/[^a-zA-Z0-9]/.test(password)) charset += 33;
+
+    if (charset === 0) return "-";
+
+    return (password.length * Math.log2(charset)).toFixed(2);
+}
+
+const entropyValue = document.getElementById("entropy-value");
+
+password.addEventListener("input", () => {
+    const entropy = calculateEntropy(password.value);
+    entropyValue.textContent = entropy + " bits";
+});
+
+
 
 
 
