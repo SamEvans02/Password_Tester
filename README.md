@@ -27,6 +27,7 @@ Also, everyone uses passwords. So even though there isn't a line around the corn
 ## Future Features 
     - Password reccomendations (based on current input) 
     - Modification to the "Generate" button: If a user already has input in the text box, randomization will use some of that, if left blank it will generate from scratch 
+    - Add a time at blank guesses per second to guess the password 
 <br><br>
 
 
