@@ -30,6 +30,16 @@ a.Active_Link:hover {
     text-decoration-thickness: 2px;
 }
 
+a.Footer_Link {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #636363;
+}
+a.Footer_Link:hover {
+    color: white;
+    text-decoration: dashed;
+}
+
 
 
 
