@@ -31,6 +31,8 @@ a.Active_Link:hover {
 }
 
 a.Footer_Link {
+    margin-left: -4%;
+    margin-right: auto;
     font-size: 13px;
     text-decoration: underline;
     color: #636363;
