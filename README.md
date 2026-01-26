@@ -15,7 +15,7 @@ Everyone uses passwords. So even though there isn't a line around the corner for
 
 ## Features 
     - Compliant with NIST SP 800-63B (Link 1-3) 
-    Note: This Special Publication (SP) covers topics other than generating passwords that are unrelated requirements for the purposes of this web page. 
+    Note: This Special Publication (SP) covers topics other than generating passwords 
     - Follows Microsoft's current general password standards (Link 4) 
     - A "Copy" button for convenience 
     - A "Generate" button which generates a *random strong password 
@@ -33,7 +33,7 @@ Everyone uses passwords. So even though there isn't a line around the corner for
     - Password recomendations (based on current input) 
     - Modification to the "Generate" button: If a user already has input in the text box, randomization will use some of that, if left blank it will generate from scratch 
     - Improve the randomness feature(s) 
-    - Add a time at blank guesses per second to guess the password 
+    - Add a calculated time at 'n' guesses per second to guess the password (based on the calculated entropy) 
     - Reformat/Reorganize the code 
     - Add an "About" page 
 <br><br>
