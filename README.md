@@ -7,10 +7,10 @@ Note: This will be copied into my "Website" repository when I get around to addi
 
 
 ## Summary 
-This is a fairly basic password tester, the features are listed down below in the "Features" section. <br>
-I wanted this to be a simple, one-page service; when I want to use a password website, I want the simple & immediate feedback on my password without scrolling for additional information. <br><br>
-I made this for two main reasons: I am trying to add resources like this to my website and the other password sites I found online were good enough, but I thought I could make a better version for myself. <br><br>
-Everyone uses passwords. So even though there isn't a line around the corner for my version of a password tester, it's still helpful. <br><br><br><br><br>
+This is a fairly basic password tester, the exact features are listed below. <br>
+I wanted this to be a simple, one-page service; when I use a password website, I want the simple & immediate feedback on my password without scrolling for additional information. <br><br>
+I made this for two reasons: I'm trying to add resources like this to my website and the other password sites I found online were good enough, but I thought I could make a better version for myself. <br>
+Everyone uses passwords, so even though there isn't a line around the corner for my version of a password tester, my hope is that it's still helpful. <br><br><br><br><br>
 
 
 ## Features 
@@ -31,7 +31,7 @@ Everyone uses passwords. So even though there isn't a line around the corner for
 
 ## Future Features 
     - Password recomendations (based on current input) 
-    - Modification to the "Generate" button: If a user already has input in the text box, randomization will use some of that, if left blank it will generate from scratch 
+    - Modification to the "Generate" button: If there's already input in the text box, randomization will use some of that, otherwise it will generate from scratch 
     - Improve the randomness feature(s) 
     - Add a calculated time at 'n' guesses per second to guess the password (based on the calculated entropy) 
     - Reformat/Reorganize the code 
