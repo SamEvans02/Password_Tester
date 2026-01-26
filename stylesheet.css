@@ -357,6 +357,7 @@ a.Footer_Link:hover {
     margin-right: auto;
     margin-left: -20%;
     /*margin-left: -250px;*/
+    margin-top: -10%;
     margin-bottom: auto;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(6px);
