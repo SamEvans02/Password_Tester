@@ -23,7 +23,7 @@ Everyone uses passwords, so even though there isn't a line around the corner for
     - I want this to remain simple, but am open to new ideas 
 
 <b>Link 1:</b> [NIST SP 800-63B](https://pages.nist.gov/800-63-4/sp800-63b.html) <br>
-<b>Link 2:</b> [NIST SP 800-63B Password Section](https://pages.nist.gov/800-63-4/sp800-63b/passwords/) <br>
+<b>Link 2:</b> [NIST SP 800-63B- Password Section](https://pages.nist.gov/800-63-4/sp800-63b/passwords/) <br>
 <b>Link 3:</b> [Drata's Summary of NIST Password Guidelines (2025 Update)](https://drata.com/blog/nist-password-guidelines) <br>
 <b>Link 4:</b> [Microsoft- Create and Use Strong Passwords](https://support.microsoft.com/en-us/windows/create-and-use-strong-passwords-c5cebb49-8c53-4f5e-2bc4-fe357ca048eb) <br>
 <br><br><br>
