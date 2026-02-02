@@ -65,6 +65,7 @@ function generatePassword(length = 16) {
     let password = "";
     for (let i = 0; i < length; i++) {
         password += chars[Math.floor(Math.random() * chars.length)];
+        //Math.random Info: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random 
     }
     return password;
 }
